@@ -1,0 +1,19 @@
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 60px;
+
+    width: 100%;
+    padding-inline: var(--container-padding-x);
+
+    @include mobile {
+        row-gap: 40px;
+    }
+
+    @include mobileMini {
+        row-gap: 40px;
+    }
+
+}

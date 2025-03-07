@@ -1,0 +1,105 @@
+@import "./variables", "./mixins", "./media";
+
+body {
+  font-family: var(--font-family-base);
+
+  color: var(--color-green);
+  background-color: var(--color-dark);
+
+  @include adaptive-text(16, 20);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title-h1 {
+  line-height: 1;
+  font-family: "Tekur", monospace;
+  font-weight: 400;
+  color: var(--color-green);
+}
+
+h1,
+.title-h1 {
+  @include adaptive-text(25, 30);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header,
+footer {
+  display: flex;
+  align-items: center;
+  padding-inline: var(--container-padding-x);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 80px;
+
+  @include mobile {
+    height: 60px;
+  }
+
+  @include mobileMini {
+    height: 60px;
+  }
+}
+
+header {
+  justify-content: start;
+  border-bottom: var(--border);
+}
+
+footer {
+  justify-content: end;
+  border-top: var(--border);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+  min-width: 60px;
+
+  border: none;
+  border-radius: var(--border-radius);
+
+  color: inherit;
+  background-color: var(--color-light);
+}
+
+.button-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo {
+  width: 234px;
+  height: 32px;
+
+  @include mobile {
+    width: 183px;
+    height: 25px;
+  }
+
+  @include mobileMini {
+    width: 183px;
+    height: 25px;
+  }
+}

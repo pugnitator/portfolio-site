@@ -1,0 +1,27 @@
+:root {
+    --color-dark: #403B3F;
+    --color-dark-alt: #665E64;
+    --color-light: #F3F1F0;
+    --color-light-alt: #DBD7D4;
+    --color-gray: #7F7B8A;
+    --color-red: #D04950;
+    --color-green: #7AFF60;
+
+    --border: 3px solid var(var(--color-light));
+    --border-radius: 10px;
+    --border-radius-large: 20px;
+
+    --font-family-base: 'IBM Plex Mono', monospace;
+
+    --container-padding-x: 15px;
+
+    //540 = ширина кнопки (80) * 5 колонок + 20*4промежутка + 30*2паддинга
+    --section-width: clamp(540px, calc(90vw - var(--section-padding) * 2), 1100px);
+    --section-padding: 30px;
+
+    --button-heigth: 80px;
+
+    --header-height: 80px;
+
+    --transition-duration: 0.2s;
+}

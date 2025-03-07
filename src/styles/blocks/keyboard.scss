@@ -1,0 +1,84 @@
+@import "../variables", '../media';
+
+.keyboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 0;
+}
+
+.keyboard__buttons {
+  display: grid;
+  width: var(--section-width);
+  height: 450px;
+  padding: 30px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 82.5px);
+  gap: 20px;
+
+  color: var(--color-light);
+
+  background-color: var(--color-light-alt);
+  border-radius: var(--border-radius-large);
+
+  @include tablet {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.keyboard__button {
+  min-width: 80px;
+  border-radius: var(--border-radius);
+}
+
+#keyboard_button_0 {
+    background-color: var(--color-gray);
+}
+
+/*Кнопка почты*/
+#keyboard_button_13 {
+  @include mobile {
+    grid-column: 4 / span 2;
+    background-color: var(--color-gray);
+  }
+}
+
+#keyboard_button_16 {
+  @include tablet {
+    grid-column: 5 / span 2;
+    background-color: var(--color-gray);
+  }
+}
+
+#keyboard_button_22 {
+  @include desktop {
+    grid-column: 7 / span 2;
+    background-color: var(--color-gray);
+  }
+}
+
+/*Кнопка телеги*/
+#keyboard_button_15 {
+  @include mobile {
+    grid-column: 2 / span 3;
+    background-color: var(--color-red);
+  }
+}
+
+#keyboard_button_18 {
+  @include tablet {
+    grid-column: 2 / span 4;
+    background-color: var(--color-red);
+  }
+}
+
+#keyboard_button_25 {
+  @include desktop {
+    grid-column: 3 / span 4;
+    background-color: var(--color-red);
+  }
+}
