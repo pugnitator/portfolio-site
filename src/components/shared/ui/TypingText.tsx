@@ -18,5 +18,5 @@ export default function TypingText({text, speedMs}: TypingTextProp) {
     });
   }, []);
 
-  return <div className="live-typing">{title.join('')}</div>;
+  return <span className="live-typing">{title.join('')}</span>;
 }
