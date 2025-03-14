@@ -1,0 +1,17 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info__container {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.info__container.transparent {
+  opacity: 0;
+  pointer-events: none;
+}
