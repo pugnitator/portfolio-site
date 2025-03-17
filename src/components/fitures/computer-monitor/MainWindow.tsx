@@ -22,7 +22,7 @@ export default function MainWindow({ isOn }: MainWindowProp) {
         <nav className="monitor-screen__nav">
           <ul className="monitor-screen__menu-list">
             {menuItems.map(({ text, path }, index) => (
-              <li className="monitor-screen__menu-item" key={`menu-item${index}`}>
+              <li className="monitor-screen__menu-item link" key={`menu-item${index}`}>
                 <NavLink to={path}>{`[ ${text} ]`}</NavLink>
               </li>
             ))}

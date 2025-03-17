@@ -1,0 +1,15 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+
+.about__link-list {
+    padding-inline: 30px 60px;
+}
+
+.span-title {
+    font-weight: 400;
+}
