@@ -26,4 +26,4 @@ export default function ContentContainer({title, children}: ContentContainerProp
       <button className="link" type="button">{`[ Назад ]`}</button>
     </article>
   );
-}
+};

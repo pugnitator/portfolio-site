@@ -7,7 +7,7 @@ body {
   color: var(--color-green);
   background-color: var(--color-dark);
 
-  @include adaptive-text(16, 20);
+  @include adaptive-text(16, 18);
 }
 
 h1,
