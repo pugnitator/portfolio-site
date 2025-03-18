@@ -1,0 +1,47 @@
+.greeting-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+}
+
+// .greeting-container__stars {
+//     position: relative;
+//     height: fit-content;
+//     width: fit-content;
+// }
+
+.greeting-container__pixel-cat {
+  min-width: 175px;
+  aspect-ratio: 1.229;
+}
+
+.greeting-container__pixel-star {
+  position: absolute;
+  width: clamp(3px, 0.39vw, 5px);
+  aspect-ratio: 1;
+
+  background-color: var(--color-green);
+
+  animation-name: blinking-stars;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blinking-stars {
+  from {
+    opacity: 100;
+  }
+
+  50% {
+    scale: 1.2;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import AboutArticle from "./AboutArticle";
 import { NavLink } from "react-router-dom";
+import GreetingPage from "./GreetingPage";
 
 export interface MainWindowProp {
   isOn: boolean;
@@ -31,7 +32,7 @@ export default function MainWindow({ isOn }: MainWindowProp) {
       </div>
       <div className="monitor-screen__content">
         <Routes>
-          <Route path="/" element={<AboutArticle />} />
+          <Route path="/" element={<GreetingPage />} />
           <Route path="/about" element={<AboutArticle />} />
           <Route path="/" element={<AboutArticle />} />
           <Route path="/" element={<AboutArticle />} />

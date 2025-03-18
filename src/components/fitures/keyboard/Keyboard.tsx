@@ -16,12 +16,18 @@ export default function Keyboard() {
     buttonList && (
       <section className="keyboard">
         <h1 className="visually-hidden">Contacts</h1>
-        <div className='keyboard__messages' />
+        <div className="keyboard__messages" />
         <div className="keyboard__buttons">
-          {buttonList.map((item, index) => (
-            typeof item === 'function' ? item("keyboard_button_" + index) : 
-            <div className="keyboard__button button" id={"keyboard_button_" + index} />
-          ))}
+          {buttonList.map((item, index) => typeof item === "function" 
+          ? (item("keyboard_button_" + index)) 
+          : (
+              <div
+                className="keyboard__button button"
+                id={"keyboard_button_" + index}
+                key={"keyboard_button_" + index}
+              />
+            )
+          )}
         </div>
       </section>
     )
